@@ -188,7 +188,7 @@ color:#fff;}
 @media (max-width:468px){
   .navbar{flex-direction: column;
   align-items:flex-start;
-padding:1rem 1.5rem;}
+padding:0.8rem 1rem;}
 
 .logo{font-size:1.5rem;
 margin-bottom:0.5rem;}
@@ -196,10 +196,15 @@ margin-bottom:0.5rem;}
 .nav-links{display:flex;
 flex-direction: column;
 width:100%;
-gap:0.8rem;}
+gap:0.4rem;}
+
+.navbar .nav-links{display:grid;
+grid-template-columns: repeat(2,1fr);
+gap:0.6rem 1rem;
+width:100%;}
 
 .nav-links a{display:block;
-padding:0.5rem 0;
+padding:0.4rem 0;
 border-bottom:1px solid rgba(255,255,255,0.1);
 font-size:0.95rem;}
 
