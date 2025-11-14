@@ -4,7 +4,7 @@ Welcome to my personal portfolio website!
 I'm **Abhijith S**, an aspiring **Full Stack Developer** passionate about creating modern and responsive web experiences.
 
 ## 🚀 Live Demo
-👉 [View Portfolio]()
+👉 [View Portfolio](https://abhijith-dev3.github.io/personal-portfolio/)
 
 ## 🧠 About Me
 I’m currently studying Computer Science and focusing on mastering frontend technologies like **HTML**, **CSS**, and **JavaScript**, and will soon dive into **React.js** and backend frameworks.
