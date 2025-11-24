@@ -2,6 +2,7 @@ const buttons = document.querySelectorAll(".filter-buttons button");
 const cards = document.querySelectorAll(".project-card");
 const extraProjects = document.querySelector('.extra-projects');
 const showMoreBtn = document.getElementById('show-more-btn');
+const fills = document.querySelectorAll(".fill");
 
 buttons.forEach(btn => {
     btn.addEventListener("click", () => {
@@ -33,4 +34,15 @@ showMoreBtn.addEventListener('click', () => {
         showMoreBtn.textContent = "Show More";
     }
 });
+
+fills.forEach(fill => {
+    const percent = fill.getAttribute("style").match(/width:\s*(\d+)%/)[1];
+    fill.style.width="0%";
+    setTimeout(() => {
+        fill.style.transition = "width 2s ease-in-out";
+        fill.style.width = percent + "%";
+    },100);
+});
+
+
 
