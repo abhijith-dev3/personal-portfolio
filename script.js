@@ -44,5 +44,18 @@ fills.forEach(fill => {
     },100);
 });
 
+const themeBtn = document.getElementById("theme-toggle");
+
+themeBtn.addEventListener("click", () => {
+  if (document.body.getAttribute("data-theme") === "dark") {
+    document.body.removeAttribute("data-theme"); // back to light
+    themeBtn.textContent = "🌙";
+  } else {
+    document.body.setAttribute("data-theme", "dark");
+    themeBtn.textContent = "☀️";
+  }
+});
+
+
 
 
