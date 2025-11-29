@@ -279,6 +279,111 @@ body.dark .theme-btn:hover {
 }
 .about li{list-style: none;}
 
+
+/* Section */
+.connect-section {
+  background: #fff;
+  text-align: center;
+  padding: 3rem 5%;
+}
+
+.connect-title {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #0077b6;
+}
+
+/* GRID FIXED */
+.connect-grid {
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px,100px));
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+  margin-top:2rem;
+}
+
+/* CARD FIXED */
+.connect-card {
+  height: 95px;
+  width: 95px;
+  border: 1.5px solid #c7c7c7;
+  background: #ffffff;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap:10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+/* Hover */
+
+.ig:hover{
+  border-color:red;
+  transform: translateY(-4px);
+  box-shadow: 0 3px 10px rgba(255, 99, 99, 0.5);
+}
+
+.ln:hover{
+  border-color: #0077b6;
+  transform:translateY(-4px);
+  box-shadow:0 3px 10px rgba(87, 56, 212, 0.5)
+}
+
+.gh:hover{
+  border-color:black;
+  transform:translateY(-4px);
+  box-shadow:0 3px 10px rgba(14, 12, 18, 0.5)
+}
+
+.x:hover{
+  border-color:black;
+  transform:translateY(-4px);
+  box-shadow:0 3px 10px rgba(19, 16, 33, 0.5)
+}
+
+/* ICON FIX */
+.connect-card i {
+  font-size: 1.6rem;
+}
+
+/* SHORT NAMES */
+.connect-card span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Brand Colors */
+.ln { color: #0077b5; }
+.gh { color: #222; }
+.x  { color: #000; }
+.ig { color: #ff3040; }
+
+/* MOBILE POLISHED */
+@media (max-width: 450px) {
+  .connect-card {
+    height: 85px;
+    width: 85px;
+  }
+
+  .connect-card i {
+    font-size: 1.4rem;
+  }
+
+  .connect-card span {
+    font-size: 0.75rem;
+  }
+}
+
+
 /*skills*/
 .skills-container {
   display: flex;
